@@ -1,38 +1,113 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.nav {
+  height: 4.567rem;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 2.775rem;
+  padding: 3.535rem 0;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 40%);
+}
+
+.main-header {
+  font-size: 2.4775rem;
+  line-height: 1.175rem;
+  font-weight: 900;
+  text-align: left;
+  color: #393e46;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* search component css */
+
+.search-container {
+  width: 330px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inputBox {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 12px 1.23rem;
+  border: 0.0375rem solid gray;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  color: #393e46;
+  text-align: center;
+
+}
+
+
+/* food item css */
+.itemContainer {
+  width: 340px;
+  border-radius: .8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin: 27px;
+  padding: 16px 0;
+  overflow: hidden;
+  font-family: Polysans, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.foodImg {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.foodTitle {
+  font-size: 1.465rem;
+  text-transform: capitalize;
+  color: #393e46;
+  line-height: 2.5rem;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btnContainer{
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+}
+.main-btn {
+  width: 120px;
+  padding: 8px 0;
+  outline: 0;
+  border: 0;
+  background-color: gold;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 10px 0;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 26px;
+  line-height: 1.2rem;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
 }
 
-.App-link {
-  color: #61dafb;
+.main-btn:hover{
+  background-color: rgb(231, 200, 22);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* container css */
+.parentContainer{
+  display: flex;
+}
+
+/* inner container */
+.innerContaier{
+  flex: 1;
+  padding: 10px;
+  margin: 15px;
 }
